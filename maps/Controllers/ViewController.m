@@ -31,7 +31,7 @@
     annotation.coordinate = CLLocationCoordinate2DMake(-23.56136640838073, -46.6562633199172);
     [self.mapView showAnnotations:@[annotation] animated:YES];
     [self.mapView selectAnnotation:annotation animated:YES];
-
+    
     
 }
 
@@ -64,12 +64,43 @@
 # pragma mark - Actions
 - (IBAction)searchAdress:(id)sender {
     NSLog(@"%@", self.addressField.text);
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    NSString *address = self.addressField.text;
+    
+    
+    [geocoder geocodeAddressString:address
+                 completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+                     CLPlacemark *placemark = [placemarks firstObject];
+                     NSLog(@"%@", placemark);
+                     if(placemarks.count > 0)
+                     {
+                         CLPlacemark *placemark = [placemarks objectAtIndex:0];
+                         //self.outputLabel.text = placemark.location.description;
+                         
+                         [self setInMap:placemark.location.coordinate.latitude
+                              longitude:placemark.location.coordinate.longitude];
+                     }
+                 }];
+    
 }
 
 - (IBAction)searchLatLon:(id)sender {
     NSLog(@"%@", self.latField.text);
     NSLog(@"%@", self.lonField.text);
     
+    float latitude = [self.latField.text floatValue];
+    float longitude = [self.lonField.text floatValue];
+    
+    [self setInMap:latitude longitude:longitude];
+}
+
+- (void)setInMap:(float) latitude longitude:(float) longitude {
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    annotation.title = @"Resultado da Busca";
+    annotation.coordinate = CLLocationCoordinate2DMake(latitude, longitude);
+    [self.mapView showAnnotations:@[annotation] animated:YES];
+    [self.mapView selectAnnotation:annotation animated:YES];
 }
 
 @end
