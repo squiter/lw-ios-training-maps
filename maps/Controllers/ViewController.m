@@ -13,6 +13,10 @@
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 
+@property (nonatomic, weak) IBOutlet UITextField *addressField;
+@property (nonatomic, weak) IBOutlet UITextField *latField;
+@property (nonatomic, weak) IBOutlet UITextField *lonField;
+
 @end
 
 @implementation ViewController
@@ -27,6 +31,8 @@
     annotation.coordinate = CLLocationCoordinate2DMake(-23.56136640838073, -46.6562633199172);
     [self.mapView showAnnotations:@[annotation] animated:YES];
     [self.mapView selectAnnotation:annotation animated:YES];
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +59,17 @@
     imageView.image = [UIImage imageNamed:@"masp"];
     annotationView.rightCalloutAccessoryView = imageView;
     return annotationView;
+}
+
+# pragma mark - Actions
+- (IBAction)searchAdress:(id)sender {
+    NSLog(@"%@", self.addressField.text);
+}
+
+- (IBAction)searchLatLon:(id)sender {
+    NSLog(@"%@", self.latField.text);
+    NSLog(@"%@", self.lonField.text);
+    
 }
 
 @end
