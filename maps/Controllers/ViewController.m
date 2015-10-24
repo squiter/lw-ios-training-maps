@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface ViewController ()
+@interface ViewController () <MKMapViewDelegate>
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 
@@ -32,6 +32,27 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    NSString *identifier = @"MyPin";
+    
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    
+    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if (!annotationView) {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        annotationView.canShowCallout = YES;
+    }
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    imageView.layer.cornerRadius = 15.0f;
+    imageView.layer.masksToBounds = YES;
+    imageView.image = [UIImage imageNamed:@"masp"];
+    annotationView.rightCalloutAccessoryView = imageView;
+    return annotationView;
 }
 
 @end
