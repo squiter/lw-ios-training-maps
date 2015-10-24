@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		815805141BDBF2180006BCB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805131BDBF2180006BCB0 /* main.m */; };
-		815805171BDBF2180006BCB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805161BDBF2180006BCB0 /* AppDelegate.m */; };
-		8158051A1BDBF2180006BCB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805191BDBF2180006BCB0 /* ViewController.m */; };
-		8158051D1BDBF2180006BCB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158051B1BDBF2180006BCB0 /* Main.storyboard */; };
-		8158051F1BDBF2180006BCB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8158051E1BDBF2180006BCB0 /* Assets.xcassets */; };
-		815805221BDBF2190006BCB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815805201BDBF2190006BCB0 /* LaunchScreen.storyboard */; };
 		8158052D1BDBF2190006BCB0 /* mapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8158052C1BDBF2190006BCB0 /* mapsTests.m */; };
 		815805381BDBF2190006BCB0 /* mapsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805371BDBF2190006BCB0 /* mapsUITests.m */; };
+		815805541BDBF2630006BCB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805471BDBF2630006BCB0 /* AppDelegate.m */; };
+		815805551BDBF2630006BCB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8158054A1BDBF2630006BCB0 /* ViewController.m */; };
+		815805561BDBF2630006BCB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8158054C1BDBF2630006BCB0 /* Assets.xcassets */; };
+		815805571BDBF2630006BCB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158054D1BDBF2630006BCB0 /* LaunchScreen.storyboard */; };
+		815805581BDBF2630006BCB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158054F1BDBF2630006BCB0 /* Main.storyboard */; };
+		8158055A1BDBF2630006BCB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 815805531BDBF2630006BCB0 /* main.m */; };
+		8158055C1BDBF2B80006BCB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8158055B1BDBF2B80006BCB0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,22 @@
 
 /* Begin PBXFileReference section */
 		8158050F1BDBF2180006BCB0 /* maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		815805131BDBF2180006BCB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		815805151BDBF2180006BCB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		815805161BDBF2180006BCB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		815805181BDBF2180006BCB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		815805191BDBF2180006BCB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8158051C1BDBF2180006BCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8158051E1BDBF2180006BCB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		815805211BDBF2190006BCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		815805231BDBF2190006BCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		815805281BDBF2190006BCB0 /* mapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8158052C1BDBF2190006BCB0 /* mapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapsTests.m; sourceTree = "<group>"; };
 		8158052E1BDBF2190006BCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		815805331BDBF2190006BCB0 /* mapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		815805371BDBF2190006BCB0 /* mapsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapsUITests.m; sourceTree = "<group>"; };
 		815805391BDBF2190006BCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815805461BDBF2630006BCB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		815805471BDBF2630006BCB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		815805491BDBF2630006BCB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8158054A1BDBF2630006BCB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8158054C1BDBF2630006BCB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8158054E1BDBF2630006BCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		815805501BDBF2630006BCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		815805521BDBF2630006BCB0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815805531BDBF2630006BCB0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8158055B1BDBF2B80006BCB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8158055C1BDBF2B80006BCB0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		815805061BDBF2180006BCB0 = {
 			isa = PBXGroup;
 			children = (
+				8158055B1BDBF2B80006BCB0 /* MapKit.framework */,
 				815805111BDBF2180006BCB0 /* maps */,
 				8158052B1BDBF2190006BCB0 /* mapsTests */,
 				815805361BDBF2190006BCB0 /* mapsUITests */,
@@ -101,25 +105,12 @@
 		815805111BDBF2180006BCB0 /* maps */ = {
 			isa = PBXGroup;
 			children = (
-				815805151BDBF2180006BCB0 /* AppDelegate.h */,
-				815805161BDBF2180006BCB0 /* AppDelegate.m */,
-				815805181BDBF2180006BCB0 /* ViewController.h */,
-				815805191BDBF2180006BCB0 /* ViewController.m */,
-				8158051B1BDBF2180006BCB0 /* Main.storyboard */,
-				8158051E1BDBF2180006BCB0 /* Assets.xcassets */,
-				815805201BDBF2190006BCB0 /* LaunchScreen.storyboard */,
-				815805231BDBF2190006BCB0 /* Info.plist */,
-				815805121BDBF2180006BCB0 /* Supporting Files */,
+				815805451BDBF2630006BCB0 /* AppDelegate */,
+				815805481BDBF2630006BCB0 /* Controllers */,
+				8158054B1BDBF2630006BCB0 /* Resources */,
+				815805511BDBF2630006BCB0 /* Supporting Files */,
 			);
 			path = maps;
-			sourceTree = "<group>";
-		};
-		815805121BDBF2180006BCB0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				815805131BDBF2180006BCB0 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8158052B1BDBF2190006BCB0 /* mapsTests */ = {
@@ -138,6 +129,43 @@
 				815805391BDBF2190006BCB0 /* Info.plist */,
 			);
 			path = mapsUITests;
+			sourceTree = "<group>";
+		};
+		815805451BDBF2630006BCB0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				815805461BDBF2630006BCB0 /* AppDelegate.h */,
+				815805471BDBF2630006BCB0 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		815805481BDBF2630006BCB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				815805491BDBF2630006BCB0 /* ViewController.h */,
+				8158054A1BDBF2630006BCB0 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8158054B1BDBF2630006BCB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8158054C1BDBF2630006BCB0 /* Assets.xcassets */,
+				8158054D1BDBF2630006BCB0 /* LaunchScreen.storyboard */,
+				8158054F1BDBF2630006BCB0 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		815805511BDBF2630006BCB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				815805521BDBF2630006BCB0 /* Info.plist */,
+				815805531BDBF2630006BCB0 /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +235,11 @@
 				TargetAttributes = {
 					8158050E1BDBF2180006BCB0 = {
 						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					815805271BDBF2190006BCB0 = {
 						CreatedOnToolsVersion = 7.1;
@@ -243,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				815805221BDBF2190006BCB0 /* LaunchScreen.storyboard in Resources */,
-				8158051F1BDBF2180006BCB0 /* Assets.xcassets in Resources */,
-				8158051D1BDBF2180006BCB0 /* Main.storyboard in Resources */,
+				815805561BDBF2630006BCB0 /* Assets.xcassets in Resources */,
+				815805581BDBF2630006BCB0 /* Main.storyboard in Resources */,
+				815805571BDBF2630006BCB0 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8158051A1BDBF2180006BCB0 /* ViewController.m in Sources */,
-				815805171BDBF2180006BCB0 /* AppDelegate.m in Sources */,
-				815805141BDBF2180006BCB0 /* main.m in Sources */,
+				815805541BDBF2630006BCB0 /* AppDelegate.m in Sources */,
+				8158055A1BDBF2630006BCB0 /* main.m in Sources */,
+				815805551BDBF2630006BCB0 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +341,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8158051B1BDBF2180006BCB0 /* Main.storyboard */ = {
+		8158054D1BDBF2630006BCB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8158051C1BDBF2180006BCB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		815805201BDBF2190006BCB0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				815805211BDBF2190006BCB0 /* Base */,
+				8158054E1BDBF2630006BCB0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8158054F1BDBF2630006BCB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				815805501BDBF2630006BCB0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,7 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = maps/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/maps/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squiter.maps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = maps/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/maps/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = squiter.maps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
